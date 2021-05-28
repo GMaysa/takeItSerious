@@ -26,9 +26,10 @@ int ham(){
     for(int i = 1; i<=maxV; i++){
         for(int j = 1; j<=maxV; i++){
             if(matriks[i][j] == 1 && matriks[j][i] == 1){
-                arrV[i] = i;
+                break;
             }
         }
+        arrV[i] = i;
     }
     srand(time(NULL));
     // for(int i = 0; i < 5 ; i++){
